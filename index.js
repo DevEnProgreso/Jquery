@@ -1,5 +1,14 @@
-$("h1").addClass("big-title margin-50");
+$("h1").css("color", "red");
 
-$("h1").text("Bye");
+$("button").click(function () {
+  $("h1").css("color", "red");
+  $("h1").text("LOOK BEHIND YOU!");
+});
 
-$("button").html("<em>Hey</em>");
+$("input").keypress(function (event) {
+  $("h1").text(event.key);
+});
+
+$("h1").on("mouseover", function () {
+  $("h1").css("color", "orange");
+});
